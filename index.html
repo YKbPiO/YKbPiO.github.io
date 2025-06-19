@@ -4,11 +4,11 @@
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-FVJVDP5HVE"></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-      gtag('config', 'G-FVJVDP5HVE');
+        gtag('config', 'G-FVJVDP5HVE');
     </script>
     
     <meta charset="UTF-8">
@@ -18,7 +18,7 @@
 </head>
 <body>
     <div class="header">
-        <a href="http://www.sakun.space" class="btn-refresh" target="_blank">🎈 Sa君的博客</a>
+        <a href="http://www.sakun.space" class="btn-refresh" target="_blank">🎈</a>
     </div>
 
     <div class="notice">
@@ -27,7 +27,7 @@
     </div>
     
     <div class="section">
-        <h2>在线看动画片儿</h2>
+        <h2>🎭在线看动画片</h2>
         <div class="grid">
             <a href="https://dl.ncat21.com/" class="card" target="_blank">
                 <div class="card-content"><h3>网飞猫</h3><p>手机&电视盒子APP下载 有广告</p></div>
@@ -62,8 +62,10 @@
         </div>
     </div>
 
-    <div class="section">
-        <h2>在线看漫画</h2>
+    <div class="section collapsible">
+        <h2 class="section-header">
+            <span class="toggle-icon">▼</span>📚在线看漫画
+        </h2>
         <div class="grid">
             <a href="https://komiic.com/" class="card" target="_blank">
                 <div class="card-content"><h3>komiic漫画</h3></div>
@@ -89,8 +91,10 @@
         </div>
     </div>
 
-    <div class="section">
-        <h2>玩游戏</h2>
+    <div class="section collapsible">
+        <h2 class="section-header">
+            <span class="toggle-icon">▼</span>🎮游戏相关
+        </h2>
         <div class="grid">
             <a href="https://map.bemanicn.com/" class="card" target="_blank">
                 <div class="card-content"><h3>中国音游地图</h3></div>
@@ -107,20 +111,25 @@
             <a href="https://flingtrainer.com/" class="card" target="_blank">
                 <div class="card-content"><h3>风灵月影官网</h3></div>
             </a>
-            <a href="https://hardwaretester.com/gamepad" class="card" target="_blank">
-                <div class="card-content"><h3>在线检查手柄</h3></div>
-            </a>
             <a href="https://www.cdkeynogap.com/list?q=" class="card" target="_blank">
                 <div class="card-content"><h3>游戏CDKEY促销购买</h3><p>注意会收税 所以显示的并非最终交易价钱 你要在这个网站购买 请联系Sa君</p></div>
             </a>
             <a href="https://sway.cloud.microsoft/1ESaLEE3x47BTgZC" class="card" target="_blank">
                 <div class="card-content"><h3>学习版下载</h3></div>
             </a>
+            <a href="https://hardwaretester.com/gamepad" class="card" target="_blank">
+                <div class="card-content"><h3>在线检查手柄</h3></div>
+            </a>
+            <a href="http://www.电脑开荒.ink" class="card" target="_blank">
+                <div class="card-content"><h3>电脑开荒网</h3><p>电脑调试 游戏工具 等等的导航网站</p></div>
+            </a>
         </div>
     </div>
     
-    <div class="section">
-        <h2>ACG综合</h2>
+    <div class="section collapsible">
+        <h2 class="section-header">
+            <span class="toggle-icon">▼</span>👯‍♀️ACG综合
+        </h2>
         <div class="grid">
             <a href="https://yuc.wiki/" class="card" target="_blank">
                 <div class="card-content"><h3>長門番堂</h3><p>新番列表</p></div>
@@ -173,8 +182,10 @@
         </div>
     </div>
 
-    <div class="section">
-        <h2>BT&网盘 离线下载</h2>
+    <div class="section collapsible">
+        <h2 class="section-header">
+            <span class="toggle-icon">▼</span>BT&网盘 离线下载
+        </h2>
         <div class="grid">
             <a href="http://www.kisssub.org/" class="card" target="_blank">
                 <div class="card-content"><h3>爱恋动漫 BT</h3></div>
@@ -194,8 +205,10 @@
         </div>
     </div>
 
-    <div class="section">
-        <h2>日韩美剧观看</h2>
+    <div class="section collapsible">
+        <h2 class="section-header">
+            <span class="toggle-icon">▼</span>🎬中日韩美剧观看
+        </h2>
         <div class="grid">
             <a href="https://www.renren.pro/" class="card" target="_blank">
                 <div class="card-content"><h3>人人影视（假）</h3></div>
@@ -215,8 +228,10 @@
         </div>
     </div>
 
-    <div class="section">
-        <h2>其它网站</h2>
+    <div class="section collapsible">
+        <h2 class="section-header">
+            <span class="toggle-icon">▼</span>💩其它网站
+        </h2>
         <div class="grid">
             <a href="https://weibo.iiilab.com/" class="card" target="_blank">
                 <div class="card-content"><h3>视频下载</h3><p>微博 抖音 B站 推特 油管 ins 等等都可以</p></div>
@@ -259,5 +274,35 @@
             <li>迷雾通的用户名&密码：xkg82th7</li>
         </ul>
     </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = document.querySelectorAll('.section.collapsible');
+            
+            sections.forEach(section => {
+                const header = section.querySelector('.section-header');
+                const toggleIcon = header.querySelector('.toggle-icon');
+                const content = section.querySelector('.grid');
+                
+                // 初始状态：默认收起（显示▼）
+                content.classList.add('collapsed');
+                section.classList.add('collapsed'); // 添加收起状态类
+                toggleIcon.textContent = '▼';
+                
+                header.addEventListener('click', function() {
+                    // 切换折叠状态
+                    content.classList.toggle('collapsed');
+                    section.classList.toggle('collapsed'); // 切换收起状态类
+                    section.classList.toggle('expanded'); // 切换展开状态类
+                    
+                    // 更新图标
+                    if (content.classList.contains('collapsed')) {
+                        toggleIcon.textContent = '▼'; // 收起状态
+                    } else {
+                        toggleIcon.textContent = '▲'; // 展开状态
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
