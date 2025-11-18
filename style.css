@@ -174,3 +174,20 @@ body {
 .section.collapsible.expanded .toggle-icon {
   transform: rotate(90deg);
 }
+
+/* 限制卡片最大宽度，避免电脑端被拉太长 */
+.card {
+  max-width: 260px;
+}
+
+/* 默认：电脑端左对齐 */
+.grid {
+  justify-content: flex-start;
+}
+
+/* 手机端居中 */
+@media (max-width: 600px) {
+  .grid {
+    justify-content: center;
+  }
+}
